@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #343a40;
+      color: white;
+      padding: 1rem;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+    }
+    nav h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    nav a {
+      display: block;
+      color: #ccc;
+      padding: 0.5rem 0;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      margin-left: 220px;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Simple Dashboard</h1>
+  </header>
+
+  <nav>
+    <h2>Menu</h2>
+    <a href="#">Home</a>
+    <a href="#">Analytics</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>This is a simple dashboard page hosted from an S3 bucket.</p>
+    </div>
+    <div class="card">
+      <h2>Statistics</h2>
+      <p>Users: 120 | Sales: $5,200 | Bounce Rate: 35%</p>
+    </div>
+    <div class="card">
+      <h2>Quick Info</h2>
+      <p>Everything in this page is self-contained in one HTML file.</p>
+    </div>
+  </main>
+
+</body>
+</html>
